@@ -1,0 +1,79 @@
+leap year
+public class Leapyear{
+
+  public static void main(String[] args) {
+    int year = 1900;
+    boolean leap = false;
+
+    // if the year is divided by 4
+    if (year % 4 == 0){
+
+      if (year % 100 == 0) {
+
+        if (year % 400 == 0)
+          leap = true;
+        else
+          leap = false;
+      }
+      else
+        leap = true;
+    }
+    
+    else
+      leap = false;
+
+    if (leap)
+      System.out.println(year + " is a leap year.");
+    else
+      System.out.println(year + " is not a leap year.");
+  }
+}
+
+
+basic java program
+
+import java.util.Scanner;
+                 
+public class JavaProgram
+{
+    public static void main(String args[])
+  {
+    int first, second, add, subtract, multiply;
+    float devide;
+    Scanner scanner = new Scanner(System.in);
+
+    System.out.print("Enter Two Numbers : ");
+    first = scanner.nextInt();
+    second = scanner.nextInt();
+
+    add = first + second;
+    subtract = first - second;
+    multiply = first * second;
+    divide = (float) first / second;
+
+    System.out.println("Sum = " + add);
+    System.out.println("Difference = " + subtract);
+    System.out.println("Multiplication = " + multiply);
+    System.out.println("Division = " + divide);
+  }
+}
+
+evenodd
+
+import java.util.Scanner;
+
+public class EvenOdd {
+
+    public static void main(String[] args) {
+
+        Scanner reader = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = reader.nextInt();
+
+        if(num % 2 == 0)
+            System.out.println(num + " is even");
+        else
+            System.out.println(num + " is odd");
+    }
+}
